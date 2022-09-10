@@ -1,0 +1,18 @@
+<section
+  class="loading"
+  *ngIf="isLoading"
+  [ngClass]="{ 'load-ready': isReady }"
+>
+  <div class="courtain-wrap" [ngClass]="{ 'load-ready': isReady }">
+    <div class="courtain"></div>
+    <div class="courtain"></div>
+    <div class="courtain"></div>
+    <div class="courtain"></div>
+    <div class="courtain"></div>
+  </div>
+  <img src="./assets/brand/vertical.svg" alt="school logo" />
+  <div class="bar">
+    <div class="loader-bar"></div>
+  </div>
+</section>
+<webview #webview attr.src="{{ url }}"></webview>
